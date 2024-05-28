@@ -1,12 +1,12 @@
 #include "pch.h"
-#include "{{cookiecutter.plugin_name}}.h"
+#include "RBlockOrigin.h"
 
 
-BAKKESMOD_PLUGIN({{cookiecutter.plugin_name}}, "{{cookiecutter.plugin_description}}", plugin_version, PLUGINTYPE_FREEPLAY)
+BAKKESMOD_PLUGIN(RBlockOrigin, "{{cookiecutter.plugin_description}}", plugin_version, PLUGINTYPE_FREEPLAY)
 
 std::shared_ptr<CVarManagerWrapper> _globalCvarManager;
 
-void {{cookiecutter.plugin_name}}::onLoad()
+void RBlockOrigin::onLoad()
 {
 	_globalCvarManager = cvarManager;
 	//cvarManager->log("Plugin loaded!");
@@ -23,7 +23,7 @@ void {{cookiecutter.plugin_name}}::onLoad()
 	//	cvarManager->log("the new value is:" + newCvar.getStringValue());
 	//});
 
-	//cvar2.addOnValueChanged(std::bind(&{{cookiecutter.plugin_name}}::YourPluginMethod, this, _1, _2));
+	//cvar2.addOnValueChanged(std::bind(&RBlockOrigin::YourPluginMethod, this, _1, _2));
 
 	// enabled decleared in the header
 	//enabled = std::make_shared<bool>(false);
@@ -32,7 +32,7 @@ void {{cookiecutter.plugin_name}}::onLoad()
 	//cvarManager->registerNotifier("NOTIFIER", [this](std::vector<std::string> params){FUNCTION();}, "DESCRIPTION", PERMISSION_ALL);
 	//cvarManager->registerCvar("CVAR", "DEFAULTVALUE", "DESCRIPTION", true, true, MINVAL, true, MAXVAL);//.bindTo(CVARVARIABLE);
 	//gameWrapper->HookEvent("FUNCTIONNAME", std::bind(&TEMPLATE::FUNCTION, this));
-	//gameWrapper->HookEventWithCallerPost<ActorWrapper>("FUNCTIONNAME", std::bind(&{{cookiecutter.plugin_name}}::FUNCTION, this, _1, _2, _3));
+	//gameWrapper->HookEventWithCallerPost<ActorWrapper>("FUNCTIONNAME", std::bind(&RBlockOrigin::FUNCTION, this, _1, _2, _3));
 	//gameWrapper->RegisterDrawable(bind(&TEMPLATE::Render, this, std::placeholders::_1));
 
 
@@ -40,9 +40,9 @@ void {{cookiecutter.plugin_name}}::onLoad()
 	//	cvarManager->log("Your hook got called and the ball went POOF");
 	//});
 	// You could also use std::bind here
-	//gameWrapper->HookEvent("Function TAGame.Ball_TA.Explode", std::bind(&{{cookiecutter.plugin_name}}::YourPluginMethod, this);
+	//gameWrapper->HookEvent("Function TAGame.Ball_TA.Explode", std::bind(&RBlockOrigin::YourPluginMethod, this);
 }
 
-void {{cookiecutter.plugin_name}}::onUnload()
+void RBlockOrigin::onUnload()
 {
 }

@@ -8,7 +8,7 @@
 constexpr auto plugin_version = stringify(VERSION_MAJOR) "." stringify(VERSION_MINOR) "." stringify(VERSION_PATCH) "." stringify(VERSION_BUILD);
 
 
-class {{cookiecutter.plugin_name}}: public BakkesMod::Plugin::BakkesModPlugin/*, public BakkesMod::Plugin::PluginSettingsWindow*//*, public BakkesMod::Plugin::PluginWindow*/
+class RBlockOrigin: public BakkesMod::Plugin::BakkesModPlugin/*, public BakkesMod::Plugin::PluginSettingsWindow*//*, public BakkesMod::Plugin::PluginWindow*/
 {
 
 	//std::shared_ptr<bool> enabled;
@@ -29,7 +29,7 @@ class {{cookiecutter.plugin_name}}: public BakkesMod::Plugin::BakkesModPlugin/*,
 
 	bool isWindowOpen_ = false;
 	bool isMinimized_ = false;
-	std::string menuTitle_ = "{{cookiecutter.plugin_name}}";
+	std::string menuTitle_ = "RBlockOrigin";
 
 	virtual void Render() override;
 	virtual std::string GetMenuName() override;

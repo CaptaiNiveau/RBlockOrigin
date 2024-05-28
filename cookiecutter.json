@@ -2,8 +2,8 @@
     "plugin_name": "RBlockOrigin",
     "plugin_description": "Removes all those nasty popups and then some",
     "_copy_without_render": [
-        "{{cookiecutter.plugin_name}}/fmt/src/*", 
-        "{{cookiecutter.plugin_name}}/fmt/include/fmt/*", 
-        "{{cookiecutter.plugin_name}}/IMGUI/*"
+        "RBlockOrigin/fmt/src/*",
+        "RBlockOrigin/fmt/include/fmt/*",
+        "RBlockOrigin/IMGUI/*"
     ]
 }

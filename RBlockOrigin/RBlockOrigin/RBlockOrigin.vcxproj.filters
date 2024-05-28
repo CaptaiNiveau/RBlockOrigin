@@ -24,7 +24,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="{{cookiecutter.plugin_name}}.cpp">
+    <ClCompile Include="RBlockOrigin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
@@ -63,12 +63,12 @@
     <ClCompile Include="imgui\imguivariouscontrols.cpp">
       <Filter>imgui\implementation</Filter>
     </ClCompile>
-    <ClCompile Include="{{cookiecutter.plugin_name}}GUI.cpp">
+    <ClCompile Include="RBlockOriginGUI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="{{cookiecutter.plugin_name}}.h">
+    <ClInclude Include="RBlockOrigin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">
